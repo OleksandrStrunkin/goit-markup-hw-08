@@ -1,0 +1,39 @@
+.hero {
+  padding: 118px 0;
+  text-align: center;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/heropic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  @include desktop{
+    padding: 200px 0;
+  max-width: 1600px;
+  }
+    &-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-title-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 360px;
+      @include desktop{
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      color: var(--first-title-color);
+      max-width: 696px;
+    }
+}
+}
+

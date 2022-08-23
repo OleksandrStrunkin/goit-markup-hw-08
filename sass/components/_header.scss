@@ -1,0 +1,87 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  &__logo {
+  margin-right: 93px;
+}
+}
+.logo {
+  display: block;
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--second-logo-color);
+}
+.logo__decoration {
+  color: var(--logo-color);
+}
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+  transition: color var(--transition-hover);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+.current {
+  color: var(--accent-color);
+  position: relative;
+  &::after {
+  position: absolute;
+  bottom: -1px;
+  display: block;
+  content: "";
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 32px 0;
+}
+.nav__link{
+  padding: 32px 0;
+}
+.contacts-header {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+.contacts-header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #757575;
+  padding: 32px 0;
+  background-color: #ffffff;
+  color: var(--text-color);
+  transition: fill var(--transition-hover), color var(--transition-hover);
+  &:hover .phone-icon,
+  &:focus .phone-icon {
+  fill: var(--accent-color);
+}
+&:hover .mail-icon,
+&:focus .mail-icon {
+  fill: var(--accent-color);
+}
+}
+.mail-icon,
+.phone-icon {
+  margin-right: 10px;
+  transition: fill var(--transition-hover);
+}

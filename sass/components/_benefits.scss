@@ -1,0 +1,65 @@
+
+.benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  min-height: 120px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+   @include desktop{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  }
+}
+.benefits-list__item {
+  width: 100%;
+  @include tablet{
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop{
+    text-align: left;
+  max-width: 270px;
+  }
+}
+.benefits-title {
+  text-align: center;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  margin: 0 0 10px 0;
+  padding: 0;
+  @include tablet{
+    text-align: left;
+  }
+  @include desktop{
+    text-align: left;
+  }
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+  margin: 0;
+  padding: 0;
+}
+
