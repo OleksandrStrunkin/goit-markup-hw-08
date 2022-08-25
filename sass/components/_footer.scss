@@ -1,6 +1,11 @@
 .page-footer {
   padding: 60px 0;
   background-color: #2f303a;
+  text-align: center;
+     @include desktop{
+  text-align: left;
+  }
+
   &__logo {
   margin-bottom: 20px;
   color: #ffffff;
@@ -8,9 +13,22 @@
 }
 .content-footer {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  @include tablet{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @include desktop{
+     flex-wrap: nowrap;
+
+  }
 }
-.contacts-footer > li:not(:last-child) {
+.contacts-footer__item:not(:last-child){
   margin-bottom: 9px;
 }
 .contacts-footer__link {
@@ -34,7 +52,9 @@
 }
 
 .footer-socialnetwork {
-  margin-left: 70px;
+    @include desktop{
+       margin-left: 70px;
+  }
 }
 .footer-soc {
   display: flex;
@@ -59,7 +79,9 @@
 }
 
 .footer-form {
-  margin-left: auto;
+    @include desktop{
+    margin-left: auto;
+  }
 }
 .form-title {
   font-weight: 700;
@@ -72,14 +94,25 @@
 }
 .footer-field {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+    @include desktop{
+    flex-direction: row;
+  }
   &__icon {
   margin-left: 10px;
 }
   &__input {
-  width: 358px;
+    margin-bottom: 20px;
+    width: 450px;
+    @media screen and (max-width:479px) {
+      width: 100%;
+    }
+      @include desktop{
+   width: 358px;
+   margin-right: 12px;
+  }
   height: 50px;
-  margin-right: 12px;
+  
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

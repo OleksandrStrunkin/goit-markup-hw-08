@@ -1,10 +1,20 @@
 
 .list-btn {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+   @include tablet{
+    align-items: center;
+  justify-content: center;
+  }
+
+  @include desktop{
+      display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
   margin-bottom: 50px;
+  }
 }
 .portfolio-btn {
   background-color: var(--color-btn-menu);
@@ -28,9 +38,23 @@
 }
 }
 .portfolio {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+  justify-content: center;
+  @include tablet{
+    flex-direction: row;
+  }
+    &-list__item{
+      @include tablet{
+    width: calc((100% - 30px) / 2);
+  }
+      @include desktop{
+        width: calc((100% - 60px) / 3);
+    }
+  }
   &-discription {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
