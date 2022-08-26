@@ -99,6 +99,10 @@ p {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px 0 15px;
@@ -340,6 +344,8 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  padding-left: 40px;
+  padding-bottom: 48px;
 }
 
 .menu-close {

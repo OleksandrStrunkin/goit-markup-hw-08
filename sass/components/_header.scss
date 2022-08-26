@@ -141,6 +141,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    padding-left: 40px;
+    padding-bottom: 48px;
 }
   
 }
@@ -156,14 +158,6 @@
   &:hover{
     fill: var(--accent-color);
   }
-}
-.mob-box{
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // height: 100%;
-  // min-height: 796px;
-  // padding-left: 40px;
 }
 .mob-menu-list {
   display: flex;
