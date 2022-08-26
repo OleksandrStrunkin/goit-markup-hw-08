@@ -138,9 +138,6 @@ p {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.page-header__logo {
-  margin-right: 93px;
-}
 @media screen and (min-width: 480px) {
   .page-header__logo {
     margin-right: auto;
@@ -149,6 +146,11 @@ p {
 @media screen and (min-width: 768px) {
   .page-header__logo {
     margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    margin-right: 93px;
   }
 }
 
@@ -1184,7 +1186,6 @@ p {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    min-height: 581px;
   }
 }
 .modal-title {

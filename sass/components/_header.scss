@@ -1,12 +1,15 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   &__logo {
-  margin-right: 93px;
+  
   @include mobile{
     margin-right: auto;
   }
   @include tablet{
     margin-right: 88px;
+  }
+  @include desktop{
+    margin-right: 93px;
   }
 }
 }
