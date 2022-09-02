@@ -2,9 +2,6 @@
   border-bottom: 1px solid #ececec;
   &__logo {
   
-  @include mobile{
-    margin-right: auto;
-  }
   @include tablet{
     margin-right: 88px;
   }
@@ -139,6 +136,8 @@
   height: 100vh;
   background-color: #ffffff;
   top: 0;
+  transition: opacity var(--transition-hover),
+    visibility var(--transition-hover);
   &__container{
     display: flex;
     flex-direction: column;
@@ -173,6 +172,9 @@ font-size: 40px;
 line-height: calc(47/40);
 letter-spacing: 0.02em;
 color: #212121;
+}
+.current-mob {
+  color: var(--accent-color);
 }
 .mob-contacts {
   display: flex;
